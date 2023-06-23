@@ -4,11 +4,11 @@ title: About me
 cover: true
 ---
 
-I'm a Research Fellow at University College London ([NLP group](https://nlp.cs.ucl.ac.uk/)). I received my Ph.D. from Monash University (Australia), supervised by Prof. [Reza Haffari](http://users.monash.edu.au/~gholamrh/) and Dr. [Mohammad Norouzi](https://norouzi.github.io/). My recent research lies in an intersection between deep learning and natural language processing, with an emphasis on robustness and security in NLP models.
+I'm a Research Fellow at Data61, CSIRO ([ICV group](https://research.csiro.au/icv/)). I received my Ph.D. from Monash University (Australia), supervised by A/Prof. [Mehrtash Harandi](https://scholar.google.com/citations?user=Z9gvBegAAAAJ&hl=en) and Prof. [Tom Drummond](https://scholar.google.com/citations?user=6sWGL5wAAAAJ&hl=en). My recent research lies in efficient adaptation algorithms of deep learning models (Few-Shot Learning) for computer vision applications. 
 
-Now, I'm highlighting:
-* Security in NLP models, including privacy leakage and protection, backdoor attack and defense, imitation attack and defense
-* Robustness in NLP models 
+Now, I'm currently interested and working on:
+* 3D scene reconstruction and novel view synthesis (Neural Radiance Field).
+* 3D reconstruction of surfaces/dense point cloud.
 
 ## Recent News
 * I joined UCL as a Research Fellow under the supervision of Dr. [Pontus Stenetorp](https://pontus.stenetorp.se/) and Dr. [Pasquale Minervini](http://www.neuralnoise.com/)
