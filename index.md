@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-cover: false
+cover: true
 ---
 
 I'm a Research Fellow at University College London ([NLP group](https://nlp.cs.ucl.ac.uk/)). I received my Ph.D. from Monash University (Australia), supervised by Prof. [Reza Haffari](http://users.monash.edu.au/~gholamrh/) and Dr. [Mohammad Norouzi](https://norouzi.github.io/). My recent research lies in an intersection between deep learning and natural language processing, with an emphasis on robustness and security in NLP models.
