@@ -43,14 +43,6 @@ after-pubs:
             title: "Artificial Neural Network and Deep Learning"
             year: 2019
             detail: as TA
-          -
-            title: "Computer Vision"
-            year: 2019
-            detail: as TA
-           -
-            title: "ECE 6001 Advanced engineering data analysis"
-            year: 2021
-            detail: as TA
   -
     heading: Service
     subsections:
