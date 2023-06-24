@@ -19,12 +19,12 @@ baseurl:               ''
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Rongkai Ma
+title:                 Rongkai Ma 马熔锴
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Xuanli at UCL
+  Rongkai at CSIRO
 
 # A shorter description for the sidebar.
 tagline:               >

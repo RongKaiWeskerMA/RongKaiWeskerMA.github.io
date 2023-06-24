@@ -51,11 +51,11 @@ after-pubs:
         items:
           -
             title: Reviewer
-            detail: ACL2020, EMNLP2020
+            detail: AAAI, TIP
   -
-    heading: Engineering Positions
+    heading: Working Experience
     items:
       -
-        title: Software Engineer
-        year: 2016&ndash;2017
-        detail: IBM Research AU
+        title: Research Fellow
+        year: 2023&ndash;present
+        detail: Data61 ICVG

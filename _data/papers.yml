@@ -5,7 +5,7 @@ papers:
     year: 2022
     title: "Learning Instance and Task-Aware Dynamic Kernels for Few-Shot Learning"
     authors: "Rongkai Ma, Pengfei Fang, Gil Avrahham, Yan Zuo, Tianyu Zhu, Tom Drummond, Mehrtash Harandi"
-    booktitle: "Computer Vision--ECCV 2022: 17th European Conference, Tel Aviv, Israel, October 23--27, 2022, Proceedings, Part XX}"
+    booktitle: "Computer Vision--ECCV 2022: 17th European Conference, Tel Aviv, Israel, October 23--27, 2022, Proceedings"
     doc-url: https://arxiv.org/abs/2112.03494
     venue: conference
   - layout: paper
