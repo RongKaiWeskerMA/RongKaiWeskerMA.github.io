@@ -3,168 +3,45 @@ papers:
     paper-type: inproceedings
     selected: yes
     year: 2022
-    title: "Extracted BERT Model Leaks More Information than You Think!"
-    authors: "Xuanli He, Chen Chen, Lingjuan Lyu, Qiongkai Xu"
-    booktitle: "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing"
-    doc-url: https://arxiv.org/abs/2210.11735
+    title: "Learning Instance and Task-Aware Dynamic Kernels for Few-Shot Learning"
+    authors: "Rongkai Ma, Pengfei Fang, Gil Avrahham, Yan Zuo, Tianyu Zhu, Tom Drummond, Mehrtash Harandi"
+    booktitle: "Computer Vision--ECCV 2022: 17th European Conference, Tel Aviv, Israel, October 23--27, 2022, Proceedings, Part XX}"
+    doc-url: https://arxiv.org/abs/2112.03494
     venue: conference
   - layout: paper
     paper-type: inproceedings
     selected: yes
     year: 2022
-    title: "Student Surpasses Teacher: Imitation Attack for Black-Box NLP APIs"
-    authors: "Qiongkai Xu, Xuanli He, Lingjuan Lyu, Lizhen Qu, Gholamreza Haffari"
-    booktitle: "Proceedings of the 29th International Conference on Computational Linguistics"
-    doc-url: https://aclanthology.org/2022.coling-1.251/
+    title: "Adaptive Poincaré point to set distance for few-shot classification"
+    authors: "Rongkai Ma, Pengfei Fang, Tom Drummond, Mehrtash Harandi"
+    booktitle: "Proceedings of the 36th AAAI conference on artificial intelligence"
+    doc-url: https://ojs.aaai.org/index.php/AAAI/article/view/20087
     venue: conference
   - layout: paper
     paper-type: inproceedings
     selected: yes
     year: 2022
-    title: "Protecting Intellectual Property of Language Generation APIs with Lexical Watermark"
-    authors: "Xuanli He, Qiongkai Xu, Lingjuan Lyu, Fangzhao Wu, Chenguang Wang"
-    booktitle: "Proceedings of the AAAI Conference on Artificial Intelligence"
-    doc-url: https://doi.org/10.1609/aaai.v36i10.21321
+    title: "Rethinking Generalization in Few-Shot Classification"
+    authors: "Markus Hiller*, Rongkai Ma*, Mehrtash Harandi, Tom Drummond"
+    booktitle: "Advances in Neural Information Processing Systems (NeurIPS) 35"
+    doc-url: https://arxiv.org/abs/2206.07267
     venue: conference
   - layout: paper
-    paper-type: inproceedings
     selected: yes
-    year: 2022
-    title: "CATER: Intellectual Property Protection on Text Generation APIs via Conditional Watermarks"
-    authors: "Xuanli He, Qiongkai Xu, Yi Zeng, Lingjuan Lyu, Fangzhao Wu, Jiwei Li, Ruoxi Jia"
-    booktitle: "Advances in Neural Information Processing Systems"
-    doc-url: https://openreview.net/forum?id=L7P3IvsoUXY
-    venue: conference
-  - layout: paper
     paper-type: inproceedings
-    selected: yes
     year: 2022
-    title: "Generate, Annotate, and Learn: NLP with Synthetic Text"
-    authors: "Xuanli He, Islam Nassar, Jamie Kiros, Gholamreza Haffari, Mohammad Norouzi"
-    booktitle: "Transactions of the Association for Computational Linguistics"
-    doc-url: https://doi.org/10.1162/tacl_a_00492
+    title: "Looking beyond two frames: End-to-end multi-object tracking using spatial and temporal transformers"
+    authors: "Tianyu Zhu, Markus Hiller, Mahsa Ehsanpour, Rongkai Ma, Tom Drummond, Ian Reid, Hamid Rezatofighi"
+    booktitle: "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+    doc-url: https://ieeexplore.ieee.org/abstract/document/9914676
     venue: journal
   - layout: paper
     paper-type: inproceedings
     selected: yes
     year: 2021
-    title: "Generalised Unsupervised Domain Adaptation of Neural Machine Translation with Cross-Lingual Data Selection"
-    authors: "Thuy-Trang Vu, Xuanli He, Dinh Phung, and Gholamreza Haffari"
-    booktitle: "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing"
-    doc-url: https://aclanthology.org/2021.emnlp-main.268/
+    title: "Learning Online for Unified Segmentation and Tracking Models"
+    authors: "Tianyu Zhu*, Rongkai Ma*, Mehrtash Harandi, Tom Drummond"
+    booktitle: "2021 International Joint Conference on Neural Networks (IJCNN)"
+    doc-url: https://ieeexplore.ieee.org/abstract/document/9533455
     venue: conference
-  - layout: paper
-    paper-type: inproceedings
-    selected: yes
-    year: 2021
-    title: "Model Extraction and Adversarial Transferability, Your BERT is Vulnerable!"
-    authors: "Xuanli He, Lingjuan Lyu, Lichao Sun, and Qiongkai Xu"
-    booktitle: "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies"
-    doc-url: https://aclanthology.org/2021.naacl-main.161/
-    venue: conference
-  - layout: paper
-    paper-type: inproceedings
-    selected: yes
-    year: 2020
-    title: "Scene Graph Modification Based on Natural Language Commands"
-    authors: "Xuanli He, Quan Hung Tran, Gholamreza Haffari, Walter Chang, Zhe Lin, Trung Bui, Franck Dernoncourt, Nhan Dam"
-    booktitle: "The Findings of the Empirical Methods in Natural Language Processing (Findings-EMNLP)"
-    doc-url: https://arxiv.org/abs/2010.02591
-    venue: conference
-  - layout: paper
-    paper-type: inproceedings
-    selected: yes
-    year: 2020
-    title: "Differentially Private Representation for NLP: Formal Guarantee and An Empirical Study on Privacy and Fairness"
-    authors: "Lingjuan Lyu, Xuanli He, Yitong Li"
-    booktitle: "The Findings of the Empirical Methods in Natural Language Processing (Findings-EMNLP)"
-    doc-url: https://arxiv.org/abs/2010.01285
-    venue: conference
-  - layout: paper
-    paper-type: inproceedings
-    selected: yes
-    year: 2020
-    title: "Towards Differentially Private Text Representations"
-    authors: "Lingjuan Lyu, Yitong Li, Xuanli He, Tong Xiao"
-    booktitle: "Proceedings of 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval"
-    doc-url: https://arxiv.org/abs/2006.14170
-    venue: conference
-  - layout: paper
-    paper-type: inproceedings
-    selected: yes
-    year: 2020
-    title: "Dynamic Programming Encoding for Subword Segmentation in Neural Machine Translation"
-    authors: "Xuanli He, Gholamreza Haffari, Mohammad Norouzi"
-    booktitle: "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics"
-    doc-url: https://www.aclweb.org/anthology/2020.acl-main.275.pdf
-    venue: conference
-  - layout: paper
-    paper-type: inproceedings
-    selected: no
-    year: 2019
-    title: "A Pointer Network Architecture for Context-Dependent Semantic Parsing"
-    authors: "Xuanli He, Quan Hung Tran, Gholamreza Haffari"
-    booktitle: "Proceedings of ALTA"
-    doc-url: https://www.aclweb.org/anthology/U19-1013.pdf
-    venue: conference
-  - layout: paper
-    selected: no
-    paper-type: inproceedings
-    year: 2019
-    title: "Fog-embedded Deep Learning for the Internet of Things"
-    authors: "Lingjuan Lyu, James C Bezdek, Xuanli He, Jiong Jin"
-    booktitle: "IEEE Transactions on Industrial Informatics"
-    doc-url: https://ieeexplore.ieee.org/abstract/document/8695142
-    venue: journal
-  - layout: paper
-    selected: no
-    paper-type: inproceedings
-    year: 2018
-    title: "Sequence to sequence mixture model for diverse machine translation"
-    authors: "Xuanli He, Gholamreza Haffari, Mohammad Norouzi"
-    booktitle: "Proceedings of CoNLL"
-    doc-url: https://arxiv.org/pdf/1810.07391.pdf
-    venue: conference
-  - layout: paper
-    selected: no
-    paper-type: inproceedings
-    year: 2018
-    title: "Exploring Textual and Speech information in Dialogue Act Classification with Speaker Domain Adaptation"
-    authors: "Xuanli He, Quan Hung Tran, William Havard, Laurent Besacier, Ingrid Zukerman, Gholamreza Haffari"
-    booktitle: "Proceedings of ALTA"
-    venue: conference 
-    doc-url: https://arxiv.org/pdf/1810.07455.pdf
-  - layout: paper
-    selected: no
-    year: 2018
-    paper-type: inproceedings
-    title: "Privacy-preserving collaborative fuzzy clustering"
-    authors: "Lingjuan Lyu, James C Bezdek, Yee Wei Law, Xuanli He, Marimuthu Palaniswami"
-    booktitle: "Data & Knowledge Engineering"
-    doc-url: https://www.researchgate.net/profile/Lingjuan_Lyu/publication/325109642_Privacy-preserving_collaborative_fuzzy_clustering/links/5b5fe0b5458515c4b25444a7/Privacy-preserving-collaborative-fuzzy-clustering.pdf
-    venue: journal 
-  - layout: paper
-    selected: no
-    paper-type: inproceedings
-    year: 2017
-    title: "Privacy-preserving collaborative deep learning with application to human activity recognition"
-    authors: "Lingjuan Lyu, Xuanli He, Yee Wei Law, Marimuthu Palaniswami"
-    booktitle: "Proceedings of the 2017 ACM on Conference on Information and Knowledge Management"
-    doc-url: https://dl.acm.org/doi/abs/10.1145/3132847.3132990
-    venue: conference
-  - layout: paper
-    year: 2017
-    paper-type: inproceedings
-    title: "Fog-empowered anomaly detection in IoT using hyperellipsoidal clustering"
-    authors: "Lingjuan Lyu, Jiong Jin, Sutharshan Rajasegarar, Xuanli He, Marimuthu Palaniswami"
-    doc-url: https://ieeexplore.ieee.org/abstract/document/7936471
-    booktitle: Proceedings of Educational Data Mining
-    booktitle-url: http://educationaldatamining.org/edm2019/
-    venue: journal
-  - layout: paper
-    year: 2016
-    paper-type: inproceedings
-    title: "Word representation models for morphologically rich languages in neural machine translation"
-    authors: "Ekaterina Vylomova, Trevor Cohn, Xuanli He, Gholamreza Haffari"
-    doc-url: https://arxiv.org/abs/1606.04217
-    venue: ""
+  

@@ -1,19 +1,20 @@
 ---
 layout: page
-title:  Papers
+title:  Research
 cover:  false
 menu:   true
 order:  1
 ---
 
-> _Research is an organized method of trying to find out what you are
-> going to do after you cannot do what you are doing now. It may also
-> be said to be the method of keeping a customer reasonably dissatisfied
-> with what he has. That means constant improvement and change so that
-> the customer will be stimulated to desire the new product enough to buy
-> it to replace the one he has._
+> _Do not believe in anything simply because you have heard it.
+> Do not believe in anything simply because it is spoken and rumored by many.
+> Do not believe in anything simply because it is found written in your religious books. 
+> Do not believe in anything merely on the authority of your teachers and elders.
+> Do not believe in traditions because they have been handed down for many generations.
+> But after observation and analysis, when you find that anything agrees with reason 
+> and is conducive to the good and benefit of one and all, then accept it and live up to it._
 >
-> ---Charles F. Kettering
+> ---Guatama Shakyamunis
 
 <ul>
 {% for paper in site.data.papers.papers %}

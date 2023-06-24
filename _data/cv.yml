@@ -1,49 +1,38 @@
 before-pubs:
   -
-    heading: Appointments
+    heading: Internship
     items:
       -
-        title: Research Assistant
+        title: Research Engineer
         year: 2017
-        detail: Monash University (FIT)
+        detail: Monash University Robotic Lab
   -
     heading: Education
     items:
       -
         title: Ph.D
-        year: 2018 &ndash; present
-        detail: Monash University (FIT)
+        year: Mar, 2019 &ndash; Dec, 2022
+        detail: Monash University (ECSE)
       -
-        title: M.S
-        year: 2015
-        detail: University of Melbourne (CIS)
+        title: B.E
+        year: 2016
+        detail: Monash University (ECSE)
       -
-        title: B.S
+        title: B.E
         year: 2013
-        detail: Southwest University of Science and Technology
+        detail: Central South University (EE)
 after-pubs:
   - 
     heading: Awards 
     items:
       -
-        title: Winning Team
-        year: 2018
-        detail: Winning Team in Collaborative Research Challenge Final (FIT at Monash)
-      -
-        title: International Postgraduate Research Scholarship
-        year: 2018
-        detail: Faculty of Information at Monash
-      -
-        title: Co-funded Monash Graduate Scholarship
-        year: 2018
-        detail: Monash
-  -
-    heading: Grants
-    items:
-      -
-        title: GCP Research Credits
+        title: International Postgraduate Tuition Scholarship
         year: 2019
-        detail: $1,000 (USD) credits from Google Cloud Platform for Machine Translation project
+        detail: Monash University
+      -
+        title: Monash Graduate Scholarship
+        year: 2018
+        detail: Monash University
   -
     heading: Teaching
     subsections:
@@ -51,8 +40,16 @@ after-pubs:
         heading: University courses
         items:
           -
-            title: "Fundamentals of Artificial Intelligence"
-            year: 2020
+            title: "Artificial Neural Network and Deep Learning"
+            year: 2019
+            detail: as TA
+          -
+            title: "Computer Vision"
+            year: 2019
+            detail: as TA
+           -
+            title: "ECE 6001 Advanced engineering data analysis"
+            year: 2021
             detail: as TA
   -
     heading: Service
