@@ -20,32 +20,6 @@
     Adapted from <a href="https://xlhex.github.io/">Xuanli He </a>
   </small></p>
   <hr class="sr-only"/>
-  <script>
-    var audioPlayer = document.getElementById('audio-player');
-    var playButton = document.getElementById('play-button');
-  
-    // Check if the Web Audio API is available
-    if (typeof AudioContext !== 'undefined' || typeof webkitAudioContext !== 'undefined') {
-      var audioContext = new (AudioContext || webkitAudioContext)();
-  
-      // Play audio upon user interaction
-      function playAudio() {
-        audioPlayer.play();
-        playButton.style.display = 'none';
-  
-        // Remove the event listener after the first play to avoid interference
-        document.removeEventListener('click', playAudio);
-      }
-  
-      // Listen for user interaction
-      document.addEventListener('click', playAudio);
-    } else {
-      // If the Web Audio API is not supported, display the play button by default
-      playButton.style.display = 'block';
-    }
-  </script>
-  <audio id="audio-player" src="{{ '/assets/audio/Biesy.mp3' | relative_url }}" loop controls>
-    Your browser does not support the audio element.
-  </audio>
+  <audio autoplay="autoplay"> <source src="/assets/audio/Biesy.mp3" type="audio/mp3"> </audio>
 </footer>
 {% endif %}
