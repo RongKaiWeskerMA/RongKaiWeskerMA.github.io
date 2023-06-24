@@ -22,17 +22,11 @@
   <hr class="sr-only"/>
   <script>
     var audioPlayer = document.getElementById('audio-player');
+    var playButton = document.getElementById('play-button');
   
-    // Play audio on page load
-    audioPlayer.play();
-  
-    // Pause audio when the page is hidden
-    document.addEventListener('visibilitychange', function () {
-      if (document.hidden) {
-        audioPlayer.pause();
-      } else {
-        audioPlayer.play();
-      }
+    playButton.addEventListener('click', function() {
+      audioPlayer.play();
+      playButton.style.display = 'none';
     });
   </script>
   <audio id="audio-player" src="{{ '/assets/audio/Biesy.mp3' | relative_url }}" autoplay loop controls>
