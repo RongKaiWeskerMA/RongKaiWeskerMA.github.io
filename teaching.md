@@ -6,7 +6,7 @@ menu:   true
 order:  2
 ---
 
-> _Teaching is more than imparting knowledge; it is inspiring changge. 
+> _Teaching is more than imparting knowledge; it is inspiring change. 
 > Learning is more than absorbing facts; it is acquiring understanding._
 >
 > ---William Arthur Ward
