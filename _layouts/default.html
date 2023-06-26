@@ -23,7 +23,6 @@ layout: base
   <header>
     <h1 class="page-title">{{ page.title | default:strings.home | default:"Home" }}</h1>
     {% include components/message.html text=page.description hide=page.hide_description %}
-    <audio autoplay="autoplay"> <source src="/assets/audio/unter.mp3" type="audio/mp3"> </audio>
   </header>
   
   {{ content }}
