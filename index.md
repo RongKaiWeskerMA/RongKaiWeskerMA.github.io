@@ -14,7 +14,7 @@ Now, I'm currently interested and have been working on:
 * I joined CSIRO as a Research Fellow since Feb, 2023 (Brisbane).
 * I completed the Ph.D degree in Dec, 2022 (Melbourne).
 
-<audio controls="autoplay"> <source src="/assets/audio/unter.mp3" type="audio/mp3"> </audio>
+<audio autoplay="autoplay"> <source src="/assets/audio/unter.mp3" type="audio/mp3"> </audio>
 
 ## Recent Research Highlights
 

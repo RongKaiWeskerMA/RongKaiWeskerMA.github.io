@@ -15,7 +15,7 @@ order:  1
 > and is conducive to the good and benefit of one and all, then accept it and live up to it._
 >
 > ---Guatama Shakyamunis
-<audio controls="autoplay"> <source src="/assets/audio/Biesy.mp3" type="audio/mp3"> </audio>
+
 <ul>
 {% for paper in site.data.papers.papers %}
   <li>
@@ -24,3 +24,4 @@ order:  1
 {% endfor %}
 </ul>
 
+<audio autoplay="autoplay"> <source src="/assets/audio/Biesy.mp3" type="audio/mp3"> </audio>
