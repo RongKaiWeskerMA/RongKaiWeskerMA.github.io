@@ -11,6 +11,7 @@ Now, I'm currently interested and have been working on:
 * 3D reconstruction of surfaces/dense point cloud from imges.
 
 ## Recent News
+* I will join Nvidia as a senior machine learning engineer next year! (Shanghai)
 * I joined CSIRO as a Research Fellow since Feb, 2023 (Brisbane).
 * I completed the Ph.D degree in Dec, 2022 (Melbourne).
 
