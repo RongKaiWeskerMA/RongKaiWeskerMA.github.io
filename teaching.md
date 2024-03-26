@@ -6,10 +6,7 @@ menu:   true
 order:  2
 ---
 
-> _Teaching is more than imparting knowledge; it is inspiring change. 
-> Learning is more than absorbing facts; it is acquiring understanding._
->
-> ---William Arthur Ward
+<img title="UQ" alt="Alt text" src="/assets/img/uq.png" style="display: block; margin-left: auto; margin-right: auto; width: 400px;" />
 
 ## Courses at the Monash Unversity
 * S1 2019 &ndash;: [ECE 4179 Neural Networks and Deep Learning](https://handbook.monash.edu/2019/units/ECE4179?year=2019) (TA)
