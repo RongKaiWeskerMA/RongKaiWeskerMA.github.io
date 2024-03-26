@@ -8,6 +8,7 @@ order:  2
 
 <img title="UQ" alt="Alt text" src="/assets/img/uq.png" style="display: block; margin-left: auto; margin-right: auto; width: 400px;" />
 
+
 ## Courses at the Monash Unversity
 * S1 2019 &ndash;: [ECE 4179 Neural Networks and Deep Learning](https://handbook.monash.edu/2019/units/ECE4179?year=2019) (TA)
 * S1 2020 &ndash;: [ECE 4179 Neural Networks and Deep Learning](https://handbook.monash.edu/2020/units/ECE4179?year=2020) (TA)

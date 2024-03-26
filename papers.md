@@ -8,6 +8,7 @@ order:  1
 
 <img title="Herston" alt="Alt text" src="/assets/img/herston.png" style="display: block; margin-left: auto; margin-right: auto; width: 400px;" />
 
+
 <ul>
 {% for paper in site.data.papers.papers %}
   <li>
