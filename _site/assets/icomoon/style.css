@@ -39,6 +39,9 @@
 .icon-location:before {
   content: "\e947";
 }
+.icon-googlescholar:before {
+  content: "\e900";
+}
 .icon-bubbles:before {
   content: "\e96c";
 }
