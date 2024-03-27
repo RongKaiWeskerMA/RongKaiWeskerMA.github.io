@@ -3,7 +3,11 @@ layout: page
 title: About me
 cover: true
 ---
-<img title="Sunshine Coast" alt="Alt text" src="/assets/img/sunshine.png" style="display: block; margin-left: auto; margin-right: auto; width: 600px;" />
+
+<p align="center">
+  <img src="/assets/img/sunshine.png">
+  <em>A picture taken at sunshine coast. A beautiful night made me feel I was in the heaven</em>
+</p>
 
 
 I am a senior machine learning engineer at Nvidia. Previously, 

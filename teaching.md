@@ -6,7 +6,10 @@ menu:   true
 order:  2
 ---
 
-<img title="UQ" alt="Alt text" src="/assets/img/uq.png" style="display: block; margin-left: auto; margin-right: auto; width: 400px;" />
+<p align="center">
+  <img src="/assets/img/uq.png" style="width: 400px; height: auto;">
+  <em>A sunny afternoon at university of Queensland. The best campus I've ever seen. Memory of tough time when preparing interviews.</em>
+</p>
 
 
 ## Courses at the Monash Unversity

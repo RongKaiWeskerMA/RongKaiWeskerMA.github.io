@@ -6,7 +6,10 @@ menu:   true
 order:  1
 ---
 
-<img title="Herston" alt="Alt text" src="/assets/img/herston.png" style="display: block; margin-left: auto; margin-right: auto; width: 400px;" />
+<p align="center">
+  <img src="/assets/img/herston.png" style="width: 400px; height: auto;">
+  <em>A normal afternoon finishing work at Herston, the best office I've ever had!</em>
+</p>
 
 
 <ul>
