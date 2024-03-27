@@ -44,4 +44,13 @@ papers:
     booktitle: "2021 International Joint Conference on Neural Networks (IJCNN)"
     doc-url: https://ieeexplore.ieee.org/abstract/document/9533455
     venue: conference
+  - layout: paper
+    paper-type: inproceedings
+    selected: yes
+    year: 2024
+    title: "Divide and Conquer: Rethinking the Training Paradigm of Neural Radiance Fields"
+    authors: "Rongkai Ma,Leo Lebrat, Rodrigo Santa Cruz, Gil Avraham, Yan Zuo, Clinton Fookes"
+    booktitle: "arxiv"
+    doc-url: https://arxiv.org/abs/2401.16144
+    venue: conference
   
