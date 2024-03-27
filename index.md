@@ -5,7 +5,7 @@ cover: true
 ---
 
 <p align="center">
-  <img src="/assets/img/sunshine.png">
+  <img src="/assets/img/sunshine.png" style="width: 600px; height: auto;">
   <em>A picture taken at sunshine coast. A beautiful night made me feel I was in the heaven</em>
 </p>
 
@@ -15,7 +15,8 @@ I was a research fellow at DATA61, CSIRO ([ICV group](https://research.csiro.au/
 
 Now, I'm currently interested and have been working on:
 * 3D scene reconstruction and novel view synthesis (Neural Radiance Field).
-* 3D reconstruction of surfaces/dense point cloud from imges.
+* 3D reconstruction of surfaces/dense point cloud from images.
+* Game automation development
 
 ## Recent News
 * I started my position at Nvidia as a senior machine learning engineer! (Shanghai)
