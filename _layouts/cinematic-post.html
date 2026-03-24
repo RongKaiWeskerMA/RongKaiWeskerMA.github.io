@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+  {% seo %}
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #ffffff;
+      --bg-card: #f5f5f5;
+      --gold: #111111;
+      --gold-dim: rgba(0, 0, 0, 0.3);
+      --text: #444444;
+      --text-dim: #999999;
+      --white: #000000;
+      --border: rgba(0, 0, 0, 0.1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+
+    a { color: var(--gold); text-decoration: none; transition: opacity 0.3s; }
+    a:hover { opacity: 0.7; }
+
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .nav a {
+      color: var(--text-dim);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover, .nav a.active { color: var(--gold); opacity: 1; }
+
+    .page-header {
+      padding: 8rem 2rem 3rem;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: var(--white);
+      letter-spacing: 0.05em;
+      line-height: 1.4;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .post-meta {
+      margin-top: 1rem;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .post-meta .tag {
+      color: var(--gold);
+      border: 1px solid var(--border);
+      padding: 0.15rem 0.5rem;
+      border-radius: 2px;
+      margin-left: 0.5rem;
+      font-size: 0.65rem;
+    }
+
+    .header-divider {
+      width: 40px;
+      height: 1px;
+      background: var(--gold-dim);
+      margin: 2rem auto 0;
+    }
+
+    .content {
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 2rem 2rem 5rem;
+    }
+
+    .content h1, .content h2, .content h3 {
+      color: var(--white);
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .content h1 { font-size: 1.5rem; font-weight: 500; letter-spacing: 0.05em; }
+    .content h2 { font-size: 1.2rem; font-weight: 500; letter-spacing: 0.05em; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+    .content h3 { font-size: 1rem; font-weight: 500; color: var(--gold); }
+
+    .content p { margin-bottom: 1.2rem; font-size: 0.95rem; }
+
+    .content ul, .content ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .content li { margin-bottom: 0.4rem; font-size: 0.95rem; }
+
+    .content img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      margin: 1rem 0;
+    }
+
+    .content em { color: var(--text-dim); font-size: 0.85rem; }
+
+    hy-img { display: block; }
+    hy-img .loading { display: none; }
+
+    .content code {
+      background: var(--bg-card);
+      color: var(--gold);
+      padding: 0.15rem 0.4rem;
+      border-radius: 3px;
+      font-size: 0.85rem;
+    }
+
+    .content pre {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 1.5rem;
+      border-radius: 4px;
+      overflow-x: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    .content pre code { background: none; padding: 0; }
+
+    .content strong { color: var(--white); }
+
+    .content blockquote {
+      border-left: 2px solid var(--gold-dim);
+      padding-left: 1.5rem;
+      margin: 1.5rem 0;
+      color: var(--text-dim);
+      font-style: italic;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 3rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2px;
+      transition: color 0.3s, border-color 0.3s;
+    }
+
+    .back-link:hover {
+      color: var(--gold);
+      border-color: var(--gold);
+      opacity: 1;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 4rem 2rem;
+      border-top: 1px solid var(--border);
+      margin-top: 2rem;
+    }
+
+    .footer-name {
+      font-size: 0.7rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-copy {
+      font-size: 0.7rem;
+      color: rgba(128,128,128,0.5);
+    }
+
+    @media (max-width: 768px) {
+      .nav { padding: 1rem 1.5rem; gap: 1.5rem; }
+      .nav a { font-size: 0.65rem; letter-spacing: 0.15em; }
+      .page-header h1 { font-size: 1.3rem; }
+      .content { padding: 1.5rem 1.5rem 4rem; }
+    }
+
+    .fade-in {
+      opacity: 0; transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+    .fade-in-delay { animation-delay: 0.3s; }
+    @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="/">ABOUT</a>
+    {% assign pages_sorted = site.pages | sort: "order" %}
+    {% for p in pages_sorted %}
+      {% if p.menu %}
+        <a href="{{ p.url }}">{{ p.title | upcase }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+
+  <div class="page-header fade-in">
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      {{ page.date | date: "%B %d, %Y" }}
+      {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+    </div>
+    <div class="header-divider"></div>
+  </div>
+
+  <div class="content fade-in fade-in-delay">
+    {{ content }}
+    <a class="back-link" href="/blog/">&larr; Back to blog</a>
+  </div>
+
+  <script>
+    document.querySelectorAll('hy-img').forEach(function(el) {
+      var noscript = el.querySelector('noscript');
+      if (noscript) {
+        var tmp = document.createElement('div');
+        tmp.innerHTML = noscript.textContent || noscript.innerHTML;
+        var img = tmp.querySelector('img');
+        if (img) {
+          img.removeAttribute('re-ignore');
+          img.style.maxWidth = '100%';
+          img.style.height = 'auto';
+          el.appendChild(img);
+        }
+      }
+    });
+  </script>
+
+  <footer class="footer">
+    <div class="footer-name">Rongkai Ma</div>
+    <div class="footer-copy">&copy; {{ 'now' | date: '%Y' }} &middot; Built for GitHub Pages</div>
+  </footer>
+
+</body>
+</html>

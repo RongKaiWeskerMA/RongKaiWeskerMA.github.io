@@ -34,12 +34,12 @@ tagline:               >
 keywords:              []
 
 # Used by jekyll-seo-tag.
-logo:                  /assets/img/me.png
+logo:                  /assets/img/me.jpg
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   name:                Rongkai Ma
-  picture:             /assets/img/me.png
+  picture:             /assets/img/me.jpg
   social:
     email:              'rongkaim@nvidia.com'
     github:             RongKaiWeskerMA
