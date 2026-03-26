@@ -1,37 +1,157 @@
----
-# Copyright (c) 2018 Florian Klampfer <https://qwtel.com/>
-#
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>404 | {{ site.title }}</title>
+  <link rel="icon" href="/assets/icons/kobe.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+  {% seo %}
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-layout: base
----
+    :root {
+      --bg: #ffffff;
+      --gold: #111111;
+      --gold-dim: rgba(0, 0, 0, 0.3);
+      --text: #444444;
+      --text-dim: #999999;
+      --white: #000000;
+      --border: rgba(0, 0, 0, 0.1);
+    }
 
-{% assign strings = site.data.strings %}
+    html { scroll-behavior: smooth; }
 
-<div class="page">
-  <h1 class="page-title">{{ page.title | default:strings.not_found.title | default: "404: Page Not Found" }}</h1>
-  <div class="hr pb0"></div>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-  {% assign test = page.content | strip_newlines %}
-  {% if test != "" %}
-    {{ content }}
-  {% else %}
-    {% capture home_link %}<a href="{{ '/' | relative_url }}">{{ strings.not_found.home_link | default:"Head back home" }}</a>{% endcapture %}
-    {% assign text = strings.not_found.message
-      | default:"Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <!--home_link--> to try finding it again." %}
-    <p class="lead">
-      {{ text | replace:"<!--home_link-->", home_link }}
-    </p>
-  {% endif %}
-</div>
+    a { color: var(--gold); text-decoration: none; transition: opacity 0.3s; }
+    a:hover { opacity: 0.7; }
+
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .nav a {
+      color: var(--text-dim);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover { color: var(--gold); opacity: 1; }
+
+    .error-page {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8rem 2rem 4rem;
+    }
+
+    .error-code {
+      font-size: 6rem;
+      font-weight: 900;
+      color: var(--gold-dim);
+      letter-spacing: -0.05em;
+      line-height: 1;
+    }
+
+    .error-message {
+      font-size: 1rem;
+      color: var(--text-dim);
+      margin-top: 1.5rem;
+      max-width: 400px;
+    }
+
+    .error-link {
+      margin-top: 2.5rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 700;
+      border-bottom: 1px solid var(--gold-dim);
+      padding-bottom: 3px;
+    }
+
+    .error-link:hover { border-color: var(--gold); }
+
+    .footer {
+      text-align: center;
+      padding: 4rem 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-name {
+      font-size: 0.7rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-copy {
+      font-size: 0.7rem;
+      color: rgba(128,128,128,0.5);
+    }
+
+    @media (max-width: 768px) {
+      .nav { padding: 1rem 1.5rem; gap: 1.5rem; }
+      .nav a { font-size: 0.65rem; letter-spacing: 0.15em; }
+      .error-code { font-size: 4rem; }
+    }
+
+    .fade-in {
+      opacity: 0; transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+    .fade-in-delay { animation-delay: 0.3s; }
+    @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="/">ABOUT</a>
+    {% assign pages_sorted = site.pages | sort: "order" %}
+    {% for p in pages_sorted %}
+      {% if p.menu %}
+        <a href="{{ p.url }}">{{ p.title | upcase }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+
+  <div class="error-page fade-in">
+    <div class="error-code">404</div>
+    <div class="error-message">{{ content }}</div>
+    <a class="error-link fade-in fade-in-delay" href="/">Back to home</a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-name">Rongkai Ma</div>
+    <div class="footer-copy">&copy; {{ 'now' | date: '%Y' }} &middot; Built for GitHub Pages</div>
+  </footer>
+
+</body>
+</html>

@@ -10,6 +10,10 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll"
 gem 'public_suffix', '~> 3.0', '>= 3.0.2'
+gem 'logger'
+gem 'csv'
+gem 'base64'
+gem 'bigdecimal'
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
